@@ -1,0 +1,136 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x05E0d683Bd3F81811a8af2E6ffaC5e543635601A",
+    "txHash": "0x6eb4231cfefcbca313d3edab0d42d993e59cd4654c94072647270b4791ca3256"
+  },
+  "proxies": [
+    {
+      "address": "0x8b3D7aF3BC28a03fC284eDb560FC97edFD521CB2",
+      "txHash": "0x9336d73c86c89e7ff7e71baa92c6b9412c57f9d98cf7f1df01dc454201a65a0e",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "d345f3176ebed45754ed80e52bdc07c3edfb1f27d2094a2804bf0d0ddd12a7c2": {
+      "address": "0x10dCc58941f5233D29b0D846CF424a2eCe3531f7",
+      "txHash": "0x96b5a927bad93e79ad317b2b022991deb23f01a696e0679ff1fbbac818d94fef",
+      "layout": {
+        "solcVersion": "0.8.16",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "s_numSodas",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "VendingMachineV1",
+            "src": "contracts/VendingMachineV1.sol:9"
+          },
+          {
+            "label": "s_owner",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "VendingMachineV1",
+            "src": "contracts/VendingMachineV1.sol:10"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "c363daf269b4fe9489efa0d1ddc9f685d9b3adec241b9c6451a9fdd9e93d3961": {
+      "address": "0x24091b810825bb57e795684a2C878ae582539B6d",
+      "txHash": "0xd69eeee3bde4792e5c0f8a5911b76ea1480ad2993503b524283fdad275776f2e",
+      "layout": {
+        "solcVersion": "0.8.16",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "s_numSodas",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "VendingMachineV2",
+            "src": "contracts/VendingMachineV2.sol:9"
+          },
+          {
+            "label": "s_owner",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "VendingMachineV2",
+            "src": "contracts/VendingMachineV2.sol:10"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

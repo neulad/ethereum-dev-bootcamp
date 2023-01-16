@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/DelegateCall.sol": {
+      "content": "//SPDX-License-Identifier: MIT\npragma solidity ^0.8.16;\n\ncontract DelegateCall {\n    address private immutable i_winnerAddress;\n\n    constructor(address winnerAddress) {\n        i_winnerAddress = winnerAddress;\n    }\n\n    function callAttempt() external {\n        (bool success, ) = i_winnerAddress.call(\n            abi.encodeWithSignature(\"attempt()\")\n        );\n\n        if (!success) revert(\"Function is not called!\");\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

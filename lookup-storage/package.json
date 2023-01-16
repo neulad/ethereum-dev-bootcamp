@@ -1,0 +1,13 @@
+{
+  "name": "lookup-storage",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "hardhat": "^2.12.6",
+    "hardhat-deploy": "^0.11.22"
+  },
+  "overrides": {
+    "@nomicfoundation/hardhat-toolbox": {
+      "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers"
+    }
+  }
+}
